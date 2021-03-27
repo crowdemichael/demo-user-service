@@ -7,9 +7,9 @@ import (
 )
 
 type Base struct {
-	Id        int       `gorm:"primaryKey"`
-	CreatedAt time.Time `gorm:"column:created_at;not null;default:CURRENT_TIMESTAMP"`
-	UpdatedAt time.Time `gorm:"column:updated_at;not null;default:CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP"`
+	Id        int64 `gorm:"primaryKey"`
+	CreatedAt time.Time
+	UpdatedAt time.Time
 	CreatedBy string
 	UpdatedBy string
 	DeletedAt gorm.DeletedAt

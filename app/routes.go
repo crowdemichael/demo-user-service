@@ -9,7 +9,7 @@ func mapUrls() {
 	{
 		kycGroup := v1.Group("users")
 		{
-			kycGroup.PUT("/:id", user.UpdateUser)
+			kycGroup.GET("/:id", user.GetUserProfile)
 		}
 	}
 }
