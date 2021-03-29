@@ -10,6 +10,7 @@ func mapUrls() {
 		kycGroup := v1.Group("users")
 		{
 			kycGroup.GET("/:id", user.GetUserProfile)
+			kycGroup.POST("/", user.CreateUser)
 		}
 	}
 }

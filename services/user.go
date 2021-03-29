@@ -5,5 +5,9 @@ import (
 )
 
 func GetUserProfile(id int64) (*user.UserProfile, error) {
-	return user.GetUserProfile(id)
+	return user.GetUserProfile2(id)
+}
+
+func CreateUser(value *user.UserProfile) (*user.UserProfile, error) {
+	return user.CreateUser2(value)
 }
